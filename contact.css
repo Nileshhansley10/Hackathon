@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+    font-weight: bolder;
+  }
+
+  .header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 15px 10%;
+    background-color: #252a4b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+
+.logotext {
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    margin-left: -640px;
+    font-size: 18px;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    margin-left: 35px;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: rgb(136, 136, 135);
+}
+
+
+  
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://template65288.motopreview.com/mt-demo/65200/65288/mt-content/uploads/2017/10/mt-1226-content-bg01.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    flex-wrap: wrap;
+  }
+  
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 68%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+ 
+  
+  section {
+    position: relative;
+    z-index: 3;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+  }
+  
+  .container {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 48px;
+  }
+  
+  .section-header {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  .section-header h2 {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .section-header p {
+    color: #FFF;
+  }
+  
+  .row  {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .contact-info {
+    width: 50%;
+  }
+  
+  .contact-info-item {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  
+  .contact-info-icon {
+    height: 70px;
+    width: 70px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 50%;
+  }
+  
+  .contact-info-icon i {
+    font-size: 30px;
+    line-height: 70px;
+  }
+  
+  .contact-info-content {
+    margin-left: 20px;
+  }
+  
+  .contact-info-content h4 {
+    color: #1da9c0;
+    font-size: 1.4em;
+    margin-bottom: 5px;
+  }
+  
+  .contact-info-content p {
+    color: #FFF;
+    font-size: 1em;
+  }
+  
+  .contact-form {
+    background-color: #fff;
+    padding: 40px;
+    width: 45%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  
+  .contact-form h2 {
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .contact-form .input-box {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .contact-form .input-box input,
+  .contact-form .input-box textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+  }
+  
+  .contact-form .input-box span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+  }
+  
+  .contact-form .input-box input:focus ~ span,
+  .contact-form .input-box textarea:focus ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+  }
+  
+  .contact-form .input-box input[type="submit"]
+  {
+    width: 100%;
+    background: #00bcd4;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #00bcd4;
+    transition: 0.5s;
+  }
+  
+  .contact-form .input-box input[type="submit"]:hover
+  {
+    background: #FFF;
+    color: #00bcd4;
+  }
+  
+
+  /* footer////////// */
+
+/* 
+.row2{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #252a4b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+} */
+
+.containfooter{
+	max-width: 100%;
+	margin:auto;
+}
+.row2{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	
+    background-color: #252a4b;
+    padding: 70px 0;
+    /* margin-left: 24px; */
+    margin-top: 55px;
+    width: 100%;
+}
+
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}

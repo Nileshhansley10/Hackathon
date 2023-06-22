@@ -12,6 +12,8 @@
 
 }
 
+
+
 .header{
     position: fixed;
     top: 0px;
@@ -48,14 +50,14 @@
 
 
 
-.container{
-    width: 100%;
+.container {
+    max-width: 100%;
+    margin: auto;
     height: 100vh;
     position: relative;
     background-image: url(dog.png);
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
 .content {
@@ -189,9 +191,9 @@ h3{
 
 /* footer */
 
-}
+
 .container{
-	max-width: 1170px;
+	max-width: 100%;
 	margin:auto;
 }
 .row{

@@ -69,13 +69,12 @@
     background-image: url(https://template65288.motopreview.com/mt-demo/65200/65288/mt-content/uploads/2017/10/mt-1226-content-bg03.jpg);
     background-repeat: no-repeat;
     width: 827px;
-    height: 663px;
+    height: 650px;
     background-size: cover;
     position: absolute;
-    top: 522px;
+    top: 530px;
     left: 692px;
 }
-
 
 div.text1{
     display: flex;
